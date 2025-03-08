@@ -20,6 +20,8 @@ def view_pending(todo_list):
     for task, done in todo_list.items():
         if not done:
             print(f"Pending Task-{task}")
+    if done:
+        print("No task pending")
     
 def view_completed(todo_list):
     
